@@ -76,7 +76,7 @@ ccetc_directory:
     admin_email: admin@email.com
     og_description: your description
     og_url: http://yoururl
-    google_maps_key: AIzaSyChMbi3EKId5hm4KhE5p4h1Gm_L6TGbECY
+    google_maps_key: yourGoogleMapsKey
     google_analytics_account: UA-NNNNNNNNN-1
     use_profiles: true
 
