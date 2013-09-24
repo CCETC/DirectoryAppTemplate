@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <services>
+	 	<service id="ccetc.directory.admin.listing" class="CCETC\DirectoryBundle\Admin\ListingAdmin">
+	        <tag name="sonata.admin" manager_type="orm" group="Listings" label="Listings"/>
+	        <argument />
+	        <argument>MyDirectory\AppBundle\Entity\Listing</argument>
+	        <argument>CCETCDirectoryBundle:ListingAdmin</argument>
+	    </service>
+	    <service id="ccetc.directory.admin.listinglocation" class="CCETC\DirectoryBundle\Admin\ListingLocationAdmin">
+	        <tag name="sonata.admin" manager_type="orm" group="Location Data" label="Listing Locations"/>
+	        <argument />
+	        <argument>MyDirectory\AppBundle\Entity\ListingLocation</argument>
+	        <argument>SonataAdminBundle:CRUD</argument>
+	    </service>
+	    <service id="ccetc.directory.admin.userlocation" class="CCETC\DirectoryBundle\Admin\UserLocationAdmin">
+	        <tag name="sonata.admin" manager_type="orm" group="Location Data" label="User Locations"/>
+	        <argument />
+	        <argument>MyDirectory\AppBundle\Entity\UserLocation</argument>
+	        <argument>SonataAdminBundle:CRUD</argument>
+	    </service>
+	    <service id="ccetc.directory.admin.userlocationalias" class="CCETC\DirectoryBundle\Admin\UserLocationAliasAdmin">
+	        <tag name="sonata.admin" manager_type="orm" group="Location Data" label="User Location Aliases"/>
+	        <argument />
+	        <argument>MyDirectory\AppBundle\Entity\UserLocationAlias</argument>
+	        <argument>SonataAdminBundle:CRUD</argument>
+	    </service>        
+	    <service id="ccetc.directory.admin.locationdistance" class="CCETC\DirectoryBundle\Admin\LocationDistanceAdmin">
+	        <tag name="sonata.admin" manager_type="orm" group="Location Data" label="Location Distances"/>
+	        <argument />
+	        <argument>MyDirectory\AppBundle\Entity\LocationDistance</argument>
+	        <argument>SonataAdminBundle:CRUD</argument>
+	    </service>        
+    </services>
+</container>
