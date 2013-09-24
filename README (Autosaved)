@@ -7,15 +7,7 @@ In your terminal:
 
 	$ git clone git@github.com:CCETC/DirectoryAppTemplate.git
 
-### 2. Install dependencies
-#### a. Install Composer
-From the DirectoryAppTemplate root directory:
-
-	$ curl -s https://getcomposer.org/installer | php
-
-#### b. Install dependencies
-
-	$ php composer.phar install
+### 2. Create an empty MySQL database
 
 ### 3. Copy dist config files
 These file soften contain sensitive information, so their skeltons are in the git repo as "dist" files.  You can copy them, remove the "dist" extension, add the sensitive information and they will be ignored by git
@@ -28,7 +20,20 @@ These file soften contain sensitive information, so their skeltons are in the gi
 #### b. Customize files
 The only requirement here is to add your database info to ``parameters.yml``.
 
-### 4. Cleanup
+
+### 4. Install dependencies
+#### a. Install Composer
+From the DirectoryAppTemplate root directory:
+
+	$ curl -s https://getcomposer.org/installer | php
+
+#### b. Install dependencies
+
+	$ php composer.phar install
+
+
+### 5. Cleanup
 #### a. Update DB?
 #### b. Install assets?
 #### c. Clear cache?
+##### d. Customize
