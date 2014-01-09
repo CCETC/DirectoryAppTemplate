@@ -8,7 +8,7 @@ In your terminal:
 	$ git clone git@github.com:CCETC/DirectoryAppTemplate.git
 
 ### 2. Copy dist config files
-These file soften contain sensitive information, so their skeltons are in the git repo as "dist" files.  You can copy them, remove the "dist" extension, add the sensitive information and they will be ignored by git
+These files often contain sensitive information, so their skeletons are in the git repo as "dist" files.  You can copy them, remove the "dist" extension, add the sensitive information and they will be ignored by git
 
 #### a. Copy files
 	$ cp app/config/security.yml.dist app/config/security.yml
