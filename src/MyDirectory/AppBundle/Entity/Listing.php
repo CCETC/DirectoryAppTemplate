@@ -44,7 +44,7 @@ class Listing extends BaseListing
     /**
      * Get location
      *
-     * @return \HSC\AppBundle\Entity\Location 
+     * @return \MyDirectory\AppBundle\Entity\Location 
      */
     public function getLocation()
     {
