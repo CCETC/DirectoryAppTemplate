@@ -12,7 +12,7 @@ These files often contain sensitive information, so their skeletons are in the g
 
 #### a. Copy files
 	$ cp app/config/security.yml.dist app/config/security.yml
-	$ cp app/config/parameters.yml.dist app/config/parameters.yml.dist
+	$ cp app/config/parameters.yml.dist app/config/parameters.yml
 	$ cp app/config/config_dev.yml.dist app/config/config_dev.yml
 
 #### b. Customize files
