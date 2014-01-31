@@ -20,13 +20,16 @@ class AppKernel extends Kernel
             new JMS\DiExtraBundle\JMSDiExtraBundle($this),
             new JMS\SecurityExtraBundle\JMSSecurityExtraBundle(),
             new Knp\Bundle\MenuBundle\KnpMenuBundle(),
+            new Sonata\CoreBundle\SonataCoreBundle(),
             new Sonata\BlockBundle\SonataBlockBundle(),
             new Sonata\jQueryBundle\SonatajQueryBundle(),
             new Sonata\AdminBundle\SonataAdminBundle(),
             new Sonata\DoctrineORMAdminBundle\SonataDoctrineORMAdminBundle(),
-            new CCETC\DirectoryBundle\CCETCDirectoryBundle(),
             new MyDirectory\AppBundle\MyDirectoryAppBundle(),
             new Mopa\Bundle\BootstrapBundle\MopaBootstrapBundle(),
+            new FOS\UserBundle\FOSUserBundle(),
+            new CCETC\DirectoryBundle\CCETCDirectoryBundle(),
+            new CCETC\DirectoryUserBundle\CCETCDirectoryUserBundle(),            
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

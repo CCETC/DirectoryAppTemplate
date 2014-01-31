@@ -22,6 +22,12 @@ class Listing extends BaseListing
     private $location;    
     
     /**
+     * @ORM\OneToOne(targetEntity="User", inversedBy="listing")
+     * @ORM\JoinColumn(name="user_id", referencedColumnName="id")
+     **/
+    private $user;
+
+    /**
      * Constructor
      */
     public function __construct()
@@ -50,7 +56,28 @@ class Listing extends BaseListing
     {
         return $this->location;
     }
- 
+    
+    /**
+     * Set user
+     *
+     * @param $user
+     * @return Listing
+     */
+    public function setUser($user = null)
+    {
+        $this->user = $user;
+    
+        return $this;
+    }
+
+    /**
+     * Get user
+     *
+     */
+    public function getUser()
+    {
+        return $this->user;
+    }
   
 
 }

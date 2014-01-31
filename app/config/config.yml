@@ -76,9 +76,9 @@ ccetc_directory:
     admin_email: admin@email.com
     og_description: your description
     og_url: http://yoururl
-    google_maps_key: yourGoogleMapsKey
+    google_maps_key: AIzaSyChMbi3EKId5hm4KhE5p4h1Gm_L6TGbECY
     google_analytics_account: UA-NNNNNNNNN-1
-    use_profiles: true
+    registration_setting: required
 
 sonata_block:
     default_contexts: [cms]
@@ -102,3 +102,10 @@ sonata_admin:
           listings:
             label: Listings
             items: [ccetc.directory.admin.listing]
+          users:
+            label: Users
+            items: [ccetc.directoryuser.admin.user]
+fos_user:
+    db_driver: orm # other valid values are 'mongodb', 'couchdb' and 'propel'
+    firewall_name: main
+    user_class: MyDirectory\AppBundle\Entity\User            

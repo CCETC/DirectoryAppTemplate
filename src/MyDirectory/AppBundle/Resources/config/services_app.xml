@@ -34,6 +34,12 @@
 	        <argument />
 	        <argument>MyDirectory\AppBundle\Entity\LocationDistance</argument>
 	        <argument>SonataAdminBundle:CRUD</argument>
-	    </service>        
+	    </service>   
+	    <service id="ccetc.directoryuser.admin.user" class="CCETC\DirectoryUserBundle\Admin\UserAdmin">
+		    <tag name="sonata.admin" manager_type="orm" group="Users" label="Users"/>
+		    <argument />
+		    <argument>MyDirectory\AppBundle\Entity\User</argument>
+		    <argument>CCETCDirectoryUserBundle:UserAdmin</argument>
+		</service>    
     </services>
 </container>
